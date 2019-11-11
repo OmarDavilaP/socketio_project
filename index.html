@@ -1,0 +1,10 @@
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io();
+
+setInterval(()=>{
+    socket.emit('chat message',{"message":"hello"});
+    console.log("got executed")
+},3000);
+
+</script>
